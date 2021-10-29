@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!---------------------Header Section-------------->
+    <section class="header">
+
+        <nav id="navbar">
+            <div id="logo">
+                <img src="img/logo.jpg" alt="profile">
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar" onclick="homeBar()"></span>
+                <span class="bar" onclick="homeBar()"></span>
+                <span class="bar" onclick="homeBar()"></span>
+            </a>
+            <ul id="menu">
+                <li class="items"><a href="#order">Home</a></li>
+                <li class="items"><a href="#service">Services</a></li>
+                <li class="items"><a href="#client">Client</a></li>
+                <li class="items"><a href="#contactForm">Contact us</a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="order">
+            <h1>WelCome to Online Food</h1>
+            <p>
+                <strong> ipsum dolor sit amet, consectetur adipisicing elit. Nobis, minima.</strong>
+            </p>
+            <a href="#" class="hero-btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-------------------------------Service Section--------------------------->
+
+    <section id="service">
+        <h1>
+            Services We Provide
+        </h1>
+        <div class="service-row">
+            <div class="service-col">
+                <img src="img/images.jfif" alt="">
+                <h2>Food Catering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, praesentium. Blanditiis autem tempora eos rerum inventore iure placeat labore, omnis in, cum, debitis eaque exercitationem earum numquam quod ducimus quas!</p>
+
+            </div>
+            <div class="service-col">
+                <img src="img/images (1).jfif" alt="">
+                <h2>Bulk Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, praesentium. Blanditiis autem tempora eos rerum inventore iure placeat labore, omnis in, cum, debitis eaque exercitationem earum numquam quod ducimus quas!</p>
+
+            </div>
+            <div class="service-col">
+                <img src="img/courier-food-delivery-service-giving-order-box-to-customer-courier-food-delivery-service-giving-order-box-to-customer-182670804.jpg" alt="">
+                <h2>Food Delivery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, praesentium. Blanditiis autem tempora eos rerum inventore iure placeat labore, omnis in, cum, debitis eaque exercitationem earum numquam quod ducimus quas!</p>
+
+            </div>
+        </div>
+
+    </section>
+    <!-------------------------------Client Section--------------------------->
+    <section id="client">
+        <h1>
+            Our Clients
+        </h1>
+        <div class="client-row">
+            <div class="client-col">
+                <img src="img/client1.png" alt="client logo">
+            </div>
+            <div class="client-col">
+                <img src="img/images3.png" alt="client logo">
+            </div>
+            <div class="client-col">
+                <img src="img/client1.png" alt="client logo">
+            </div>
+            <div class="client-col">
+                <img src="img/images3.png" alt="client logo">
+            </div>
+        </div>
+    </section>
+    <!-------------------------------Service Section--------------------------->
+    <section id="contactForm">
+        <div class="contact-us">
+            <h1>Contact Us for more details</h1>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="User Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" cols="20" rows="5" placeholder="Enter text"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+    <script>
+        function homeBar() {
+            var x = document.getElementById("menu");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
